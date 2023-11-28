@@ -35,7 +35,8 @@ namespace VMS.TPS
                 DataContext = new MainViewModel
                 (
                     new PatientViewModel(context.Patient),
-                    new PlanViewModel(context.PlanSetup)
+                    new PlanViewModel(context.PlanSetup),
+                    new FieldViewModel(context.PlanSetup)
                 )
             };
 

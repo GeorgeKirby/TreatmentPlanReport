@@ -18,6 +18,9 @@
                     <local:PlanView DataContext="{Binding PlanViewModel.PlanInfo}" Grid.Column="1"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="Fields">
+                <local:FieldView DataContext="{Binding FieldViewModel}"/>
+            </TabItem>
         </TabControl>
     </Grid>
 </UserControl>
