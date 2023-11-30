@@ -42,7 +42,9 @@ namespace VMS.TPS
                     new PlanViewModel(context.PlanSetup),
                     new FieldViewModel(context.PlanSetup),
                     new DVHPlot.ViewModels.DVHViewModel ( context.PlanSetup, eventAggregator),
-                    new DVHPlot.ViewModels.DVHSelectionViewModel ( context.PlanSetup, eventAggregator)
+                    new DVHPlot.ViewModels.DVHSelectionViewModel(context.PlanSetup, eventAggregator),
+                    context.Patient,
+                    context.CurrentUser
                 )
             };
 

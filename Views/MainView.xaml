@@ -8,7 +8,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TabControl>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Button Content="Print PDF" Margin="5" FontWeight="Bold" Background="BlanchedAlmond" Command="{Binding PrintCommand}"/>
+            <Button Content="Post to ARIA" Margin="5" FontWeight="Bold" Background="DarkOrchid" Command="{Binding ARIAPostCommand}"/>
+        </StackPanel>
+        <TabControl Grid.Row="1">
             <TabItem Header="Patient">
                 <Grid>
                     <Grid.ColumnDefinitions>
